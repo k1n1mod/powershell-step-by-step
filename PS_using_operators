@@ -1,0 +1,6 @@
+1234 -eq 1234
+1234 -eq 12345
+'Helloworld' -eq 'helloworld'
+'Helloworld' -ceq 'helloworld'
+Get-Service|where name -like *win*
+Get-Service|where status -eq 'running' || Get-Service|where {$psitem.status -eq 'running'} -> besser zu lesen
